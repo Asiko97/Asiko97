@@ -1,0 +1,54 @@
+* Rebuilt URL to: https://google.com/
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying 5.63.167.187...
+* Connected to google.com (5.63.167.187) port 443 (#0)
+* found 173 certificates in /etc/ssl/certs/ca-certificates.crt
+* found 697 certificates in /etc/ssl/certs
+* ALPN, offering http/1.1
+* SSL connection using TLS1.2 / ECDHE_ECDSA_AES_128_GCM_SHA256
+* 	 server certificate verification OK
+* 	 server certificate status verification SKIPPED
+* 	 common name: *.google.com (matched)
+* 	 server certificate expiration date OK
+* 	 server certificate activation date OK
+* 	 certificate public key: EC
+* 	 certificate version: #3
+* 	 subject: C=US,ST=California,L=Mountain View,O=Google Inc,CN=*.google.com
+* 	 start date: Wed, 03 May 2017 08:46:40 GMT
+* 	 expire date: Wed, 26 Jul 2017 08:42:00 GMT
+* 	 issuer: C=US,O=Google Inc,CN=Google Internet Authority G2
+* 	 compression: NULL
+* ALPN, server accepted to use http/1.1
+> GET / HTTP/1.1
+> Host: google.com
+> User-Agent: curl/7.47.0
+> Accept: */*
+> 
+< HTTP/1.1 302 Found
+< Location: https://www.google.am/?gws_rd=cr&ei=z3QcWb_EDIqwsQH3goT4Ag
+< Cache-Control: private
+< Content-Type: text/html; charset=UTF-8
+< P3P: CP="This is not a P3P policy! See https://www.google.com/support/accounts/answer/151657?hl=en for more info."
+< Date: Wed, 17 May 2017 16:05:35 GMT
+< Server: gws
+< Content-Length: 259
+< X-XSS-Protection: 1; mode=block
+< X-Frame-Options: SAMEORIGIN
+< Set-Cookie: NID=103=E9T6-mHTHKcc5-iFHJDQLrHtQbjXpyIXuFEcUrXFoGNsSL1RyeL0PlchRjoFHBuhPZ1UXpEdtTweffphy_XRqr_SX5hLnq_F117yL5tgdjTMGk-xzaOgPhX_PyDKOJf6; expires=Thu, 16-Nov-2017 16:05:35 GMT; path=/; domain=.google.com; HttpOnly
+< Alt-Svc: quic=":443"; ma=2592000; v="37,36,35"
+< 
+{ [259 bytes data]
+100   259  100   259    0     0    732      0 --:--:-- --:--:-- --:--:--   733
+* Connection #0 to host google.com left intact
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>302 Moved</TITLE></HEAD><BODY>
+<H1>302 Moved</H1>
+The document has moved
+<A HREF="https://www.google.am/?gws_rd=cr&amp;ei=z3QcWb_EDIqwsQH3goT4Ag">here</A>.
+</BODY></HTML>
+* Rebuilt URL to: 2/
+*   Trying 0.0.0.2...
+* Immediate connect fail for 0.0.0.2: Invalid argument
+* Closing connection 1
+curl: (7) Couldn't connect to server
